@@ -24,7 +24,7 @@ namespace Talent.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Sales>>> GetSales()
         {
-            return await _context.Sales.Include(c => c.Customer).Include(p => p.Product).Include(s => s.Store).ToListAsync();
+            return await _context.Sales.AsNoTracking().Include(c => c.Customer).Include(p => p.Product).Include(s => s.Store).ToListAsync();
         }
 
         // GET: api/Sales/5
