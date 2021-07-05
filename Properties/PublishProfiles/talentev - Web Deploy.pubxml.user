@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtuFFhqHLlUOEK1T7ZGQ31wAAAAACAAAAAAAQZgAAAAEAACAAAAB0Q9pE4yNg7iUnXjvEgeSw4dnMOh6hwAOiy+xN0zcJwQAAAAAOgAAAAAIAACAAAABKIUcnCyu13ckfNavTdmwJM8dMul0C4cFYeKXAQN0YN4AAAAC4jwKj9imk0ufFcBKNzsPqCE4T6HnC/sBkwapOcvRHTkqOak3YVjo+KyCsPYR8Il53lfE4mQi2x4ZziP3Kro+8hONx8nCJU3mxwOhNlzwREhefAAUZHS1ya+aB9nreqwNx75MDhPN0czPhMjap2p/06qx9hc9b/Zyr43IGsLVRsUAAAACbiQthXX9RsjGT6v2AwO+Kz3gdnP9dhs9x1RH36b6heqBH7nLZuVYBvIF90oCA/NUJTnQOOexRrUFZ63/I0DvV</EncryptedPassword>
+    <History>True|2021-07-05T03:32:47.2697982Z;False|2021-07-05T13:27:19.5081414+10:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SqlDatabase">
+      <Value>Data Source=tcp:talentdbserverev.database.windows.net,1433%3bInitial Catalog=talentDb%3bUser Id=eranda%40talentdbserverev%3bPassword=Talant123456</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Talent.Models.talentDbContext">
+      <Value>Data Source=tcp:talentdbserverev.database.windows.net,1433%3bInitial Catalog=talentDb%3bUser Id=eranda%40talentdbserverev%3bPassword=Talant123456</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
